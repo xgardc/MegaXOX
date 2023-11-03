@@ -10,7 +10,6 @@ const Tables = () => {
         <div key={index} className={'p-4 bg-white'}>
           <Table
             table={table}
-            fields={table.fields}
             tableId={index}
             active={activeTable === null || activeTable === index}
           />

@@ -2,12 +2,12 @@ import { useCallback } from 'react'
 import { makeMove } from '../app/game/hooks'
 import cn from 'classnames'
 
-const Table = ({ table, fields, tableId, active }) => {
+const Table = ({ table, tableId, active }) => {
   const handleMakeMove = useCallback(
     (fieldId, move) => {
       makeMove({ tableId, fieldId, move })
     },
-    [fields, tableId]
+    [tableId]
   )
 
   return table.result !== null ? (
@@ -25,7 +25,7 @@ const Table = ({ table, fields, tableId, active }) => {
         }
       )}
     >
-      {fields.map((field) => (
+      {table.fields.map((field) => (
         <button
           key={field.id}
           type="button"
