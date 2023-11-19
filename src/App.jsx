@@ -16,7 +16,7 @@ const App = () => (
       </div>
       <div className="drop-shadow-xl text-red-600 self-end opacity-10">XOX</div>
     </div>
-    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-zinc-300 italic font-extrabold text-sm pointer-events-none">
+    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 text-zinc-400 italic font-extrabold text-lg pointer-events-none">
       xq - Barış
     </div>
   </>
